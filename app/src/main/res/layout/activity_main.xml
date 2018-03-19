@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yousryelwrdany.fragmentsession.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Close Screen"
+            android:textOff="Open Screen"
+            android:textAllCaps="false"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/btnOpenSecond"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Open Second Screen"
+            android:textAllCaps="false"
+            android:textSize="17sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear1"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
